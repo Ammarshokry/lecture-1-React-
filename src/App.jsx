@@ -22,7 +22,7 @@ export default function App() {
       <ul>
         {
           list.map((el, index) => {
-            return <li key={index}>{el}  <button onClick={()=> delitem(index)}>X</button></li>
+            return <li key={index}>{index + 1}-{el}  <button onClick={()=> delitem(index)}>X</button></li>
           })
         }
       </ul>
